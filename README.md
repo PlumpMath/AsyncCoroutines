@@ -17,6 +17,6 @@ The `CoroutineState` will be provided when the coroutine yields, or returns a va
 * `CoroutineStateType.Faulted` means the coroutine terminated with an exception. You can cast the `CoroutineState` to type `CoroutineFaulted` and retrieve the exception from the `Exception` property.
 * `CoroutineStateType.Completed` means the coroutine completed, returning a value of type `TFinal`. You can cast the `CoroutineState` to type `CoroutineCompleted` and retrieve the return value from the `Value` property.
 
-A test is included which demonstrates the implementation. Be sure and view the "output" of the test. (The proper way to do it would have been to collect the outputs into a list and then `Assert` that the list is as expected -- but there was a lot of output and I was lazy.)
+A test is included which demonstrates the implementation. Be sure and view the *output* of the test. (The proper way to do it would have been to collect the outputs into a list and then `Assert` that the list is as expected -- but there was a lot of output and I was lazy.)
 
 I've tried to implement this idea before, but this implementation is the first I've written that supports "yield from."
